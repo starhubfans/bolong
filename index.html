@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARX</title>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  background: #000;
+}
+
+/* VIDEO */
+.video-box {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  display: block;
+  background: #000;
+}
+
+/* BANNER */
+.banner-300 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0 35px;
+  width: 100%;
+}
+<script>
+  atOptions = {
+    'key' : '21b363e48876c1ab61d8fd6d9a4cdbcb',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://biomanos.org/22/21b363e48876c1ab61d8fd6d9a4cdbcb"></script>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- VIDEO -->
+  <div class="video-box">
+    <video id="player" controls muted playsinline preload="metadata">
+      <source id="videoSource" src="" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- BANNER 300x250 -->
+  <div class="banner-300">
+<script>
+<script async="async" data-cfasync="false" src="https://biomanos.org/21/f07e0edd8476f26bec81777e29a8fa30"></script>
+<div id="container-f07e0edd8476f26bec81777e29a8fa30"></div>
+  </div>
+
+</div>
+
+<!-- POPUNDER -->
+<script src="https://lentattire.com/40/8c/dc/408cdc1afc5bae7a044ae4013c8c1e87.js"></script>
+
+<script>
+(function () {
+
+  const params = new URLSearchParams(window.location.search);
+  let video = params.get("v");
+
+  if (video) {
+    if (!video.startsWith("http")) {
+      video = "https://cdn.videy.co/" + video;
+    }
+  } else {
+    video = "https://cdn.videy.co/QCY4wUNX1.mp4";
+  }
+
+  const player = document.getElementById("player");
+  const source = document.getElementById("videoSource");
+
+  source.src = video;
+  player.load();
+
+})();
+</script>
+
+</body>
+</html>
